@@ -1,0 +1,11 @@
+import cv2
+img=cv2.imread(r"E:\computer vision lab\image\panda.jpg")
+Bsize=(400,400)
+Ssize=(100,100)
+BigImg=cv2.resize(img,Bsize)
+SmallImg=cv2.resize(img,Ssize)
+cv2.imshow("small img",SmallImg)
+cv2.imshow("Big img ",BigImg)
+cv2.imwrite(r"E:\computer vision lab\image\bigPanda.jpg",BigImg)
+cv2.imwrite(r"E:\computer vision lab\image\SmallPanda.jpg",SmallImg)
+cv2.waitKey(0)
